@@ -1,4 +1,4 @@
-# Solvd Front-end mentoring 2024
+# Solvd Front-end training 2024
 
 This repository contains all information about the lectures and serves as a central repository to submit all your class works.
 
