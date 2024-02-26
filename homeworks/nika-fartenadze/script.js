@@ -43,7 +43,7 @@ const setSuccess = (element) => {
 };
 
 function validateInputs() {
-  const isValid = true;
+  let isValid = true;
   const userName = userNameField.value.trim();
   const email = emailField.value.trim();
   const password = passwordField.value.trim();
@@ -61,6 +61,7 @@ function validateInputs() {
     isValid = false;
   } else if (!isEmailValid(email)) {
     setError(emailField, "Please Enter Valid Email");
+    isValid = false;
   } else {
     setSuccess(emailField);
   }
@@ -79,6 +80,7 @@ function validateInputs() {
     isValid = false;
   } else if (repeatedPassword !== password) {
     setError(repeatedPasswordField, "Passwords dont match");
+    isValid = false;
   } else {
     setSuccess(repeatedPasswordField);
   }
