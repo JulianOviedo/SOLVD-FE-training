@@ -19,11 +19,6 @@ function isEmailValid(email) {
   return regex.test(email);
 }
 
-function isPasswordValid(password) {
-  const regex =
-    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-  return regex.test(password);
-}
 const setError = (element, message) => {
   const inputControl = element.parentElement;
   const error = inputControl.querySelector(".error");
@@ -71,18 +66,21 @@ function validateInputs() {
     isValid = false;
   } else if (password.length < 8) {
     setError(passwordField, "Password should be at least 8 characters");
+    isValid = false;
   } else {
     setSuccess(passwordField);
   }
 
-  if (repeatedPassword === "") {
-    setError(repeatedPasswordField, "Please confirm password");
-    isValid = false;
-  } else if (repeatedPassword !== password) {
-    setError(repeatedPasswordField, "Passwords dont match");
-    isValid = false;
-  } else {
-    setSuccess(repeatedPasswordField);
+  if (userName && email && password.length >= 8) {
+    if (repeatedPassword === "") {
+      setError(repeatedPasswordField, "Please confirm password");
+      isValid = false;
+    } else if (repeatedPassword !== password) {
+      setError(repeatedPasswordField, "Passwords dont match");
+      isValid = false;
+    } else {
+      setSuccess(repeatedPasswordField);
+    }
   }
   return isValid;
 }
