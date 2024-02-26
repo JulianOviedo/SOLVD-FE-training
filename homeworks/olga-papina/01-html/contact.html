@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="home.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <hr />
+    <h1>Contact Me</h1>
+    <form action="#" method="POST">
+        <label>
+            Full name<sup>*</sup>
+            <input type="text" name="firstName" placeholder="Your name.." required />
+            <input type="text" name="lastName" placeholder="Your last name.." required />
+        </label>
+        <br />
+        <label for="phone">Phone number<sup>*</sup></label>
+        <input id="phone" type="text" name="phone" placeholder="Your phone.." required />
+        <br />
+        <label for="country">Country</label>
+        <select name="country">
+            <optgroup label="Cars">
+                <option>Australia</option>
+                <option>Argentina</option>
+                <option>USA</option>
+                <option>Belarus</option>
+                <option>Poland</option>
+            </optgroup>
+        </select>
+        <br />
+        <textarea name="message" rows="10" placeholder="Your message.."></textarea>
+        <br />
+        <button type="submit">Submit</button>
+        <br />
+    </form>
+    <hr />
+    <footer>
+        <img src="./images/facebook_icon.svg" height="24" width="24" alt="facebook icon">
+        <img src="./images/instagram_icon.svg" height="24" width="24" alt="instagram icon">
+        <img src="./images/linkedin_icon.svg" height="24" width="24" alt="linkedin icon">
+        <img src="./images/tweet_icon.svg" height="24" width="24" alt="tweet icon">
+    </footer>
+</body>
+
+</html>
