@@ -11,37 +11,40 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <header id="header">
-      <h1>Forms</h1>
-    </header>
     <main id="main-container">
-      <h3>Getting User Input</h3>
       <div class="form-container">
-        <form>
+        <form id="form" method="get">
           <div>
-            <label for="first-name">First Name</label>
-            <input
-              required
-              type="first-name"
-              name="first-name"
-              id="first-name"
-            />
+            <h1>Sign Up Form</h1>
           </div>
-          <div>
-            <label for="last-name">Last Name</label>
-            <input required type="last-name" name="last-name" id="last-name" />
+          <div class="control">
+            <label for="user-name">User Name</label>
+            <input type="user-name" name="user-name" id="user-name" />
+            <p class="error"></p>
           </div>
-          <div>
+          <div class="control">
             <label for="email">Email</label>
-            <input required type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" />
+            <p class="error"></p>
           </div>
-          <div>
+          <div class="control">
             <label for="password">Password</label>
-            <input required type="password" name="password" id="password" />
+            <input type="password" name="password" id="password" />
+            <p class="error"></p>
           </div>
-          <button>Login</button>
+          <div class="control">
+            <label for="repeat-password">Repeat Password</label>
+            <input
+              type="password"
+              name="repeat-password"
+              id="repeat-password"
+            />
+            <p class="error"></p>
+          </div>
+          <button>Sign Up</button>
         </form>
       </div>
     </main>
