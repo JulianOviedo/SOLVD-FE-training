@@ -107,4 +107,52 @@ body {
 }
 .button {
   padding: 14px 60px;
+  transition: 0.1s ease-in;
+  cursor: pointer;
+}
+
+.profile-cv-button:hover {
+  transform: scale(0.9);
+  background-color: rgb(236, 184, 11);
+}
+
+.profile-contact-button:hover {
+  transform: scale(0.9);
+  background-color: #cecccc;
+}
+
+/* main content styles */
+
+.main-content {
+  margin-top: 40px;
+}
+
+.tab-navigation-bar {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 18px;
+  padding: 10px;
+}
+
+.tab-navigation-bar a {
+  text-decoration: none;
+  color: #3d3d3d;
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 0 5px;
+}
+
+.tab-navigation-bar a:hover {
+  background-color: rgb(131, 126, 126);
+}
+
+.tab-navigation-bar a:first-child {
+  background-color: #d7d7d7;
+}
+
+.tab-navigation-bar a:first-child:hover {
+  background-color: rgb(131, 126, 126);
 }
