@@ -184,3 +184,50 @@ body {
   margin-bottom: 40px;
   text-align: center;
 }
+
+/* styles for dark mode */
+
+body.light-mode {
+  background-color: #e9ebec;
+  color: #3d3d3d;
+}
+
+body.dark-mode {
+  background-color: #0c151d;
+}
+
+body.dark-mode .tab-navigation-bar {
+  background-color: #171f26;
+}
+
+body.dark-mode .projects-container {
+  background-color: #0c151d;
+}
+
+body.dark-mode .tab-navigation-bar a:first-child {
+  background-color: #0c151d;
+}
+
+body.dark-mode .footer {
+  color: #99a1a8;
+}
+
+body.dark-mode .tab-navigation-bar a {
+  color: #99a1a8;
+}
+body.dark-mode .profile-contact-button {
+  background-color: #171f26;
+  color: #99a1a8;
+}
+
+body.dark-mode .profile-fact p {
+  color: #99a1a8;
+}
+
+body.dark-mode .profile-info h2 {
+  color: #fff;
+}
+
+body.dark-mode .profile-info p {
+  color: #99a1a8;
+}
