@@ -8,7 +8,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 60%;
+  width: 40%;
   height: 100vh;
 }
 
@@ -61,4 +61,50 @@ body {
   width: 150px;
   display: flex;
   justify-content: space-between;
+}
+
+/* profile facts styles */
+.profile-facts-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile-fact {
+  max-width: 100px;
+  text-align: center;
+  color: #575757;
+}
+
+.profile-fact p:first-child {
+  color: #3a3a3a;
+  line-height: 2px;
+}
+
+.profile-fact p:last-child {
+  font-size: 14px;
+}
+
+/* profile button styles */
+
+.profile-buttons-container {
+  margin: 25px auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 470px;
+}
+
+.profile-cv-button {
+  border: none;
+  background-color: #fbd144;
+  border-radius: 6px;
+}
+
+.profile-contact-button {
+  border: none;
+  background-color: #fff;
+  border-radius: 6px;
+}
+.button {
+  padding: 14px 60px;
 }
