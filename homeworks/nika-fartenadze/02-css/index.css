@@ -19,7 +19,7 @@ body {
   text-align: center;
 }
 
-.theme-toggle-button {
+.theme-toggle-container__button {
   cursor: pointer;
   transition: 0.2s ease-out;
 }
@@ -35,13 +35,13 @@ body {
 
 /* profile styles */
 
-.header-profile {
+.header__profile {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
-.profile-picture {
+.header__profile-picture {
   cursor: pointer;
   border: 4px solid rgb(247, 247, 241);
   outline: 2px solid #f7d039;
@@ -49,62 +49,62 @@ body {
   width: 100px;
 }
 
-.profile-info {
+.header__profile-info {
   line-height: 15px;
 }
 
-.profile-info p {
+.header__profile-info p {
   color: #575757;
 }
 
 /* social media icon styles */
-.profile-social-media-icons {
+.header__profile-social-media-icons {
   width: 150px;
   display: flex;
   justify-content: space-between;
 }
-.profile-social-media-icons img {
+.header__profile-social-media-icons img {
   cursor: pointer;
 }
 
 /* profile facts styles */
-.profile-facts-container {
+.header__profile-facts-container {
   margin-top: 30px;
   display: flex;
   justify-content: space-around;
 }
 
-.profile-fact {
+.header__profile-fact {
   max-width: 100px;
   text-align: center;
   color: #575757;
 }
 
-.profile-fact p:first-child {
+.header__profile-fact p:first-child {
   color: #3a3a3a;
   line-height: 2px;
 }
 
-.profile-fact p:last-child {
+.header__profile-fact p:last-child {
   font-size: 14px;
 }
 
 /* profile button styles */
 
-.profile-buttons-container {
+.header__profile-buttons-container {
   margin: 25px auto;
   display: flex;
   justify-content: space-between;
   max-width: 470px;
 }
 
-.profile-cv-button {
+.header__profile-cv-button {
   border: none;
   background-color: #fbd144;
   border-radius: 6px;
 }
 
-.profile-contact-button {
+.header__profile-contact-button {
   border: none;
   background-color: #fff;
   border-radius: 6px;
@@ -115,12 +115,12 @@ body {
   cursor: pointer;
 }
 
-.profile-cv-button:hover {
+.header__profile-cv-button:hover {
   transform: scale(0.9);
   background-color: rgb(236, 184, 11);
 }
 
-.profile-contact-button:hover {
+.header__profile-contact-button:hover {
   transform: scale(0.9);
   background-color: #cecccc;
 }
@@ -131,7 +131,7 @@ body {
   margin-top: 40px;
 }
 
-.tab-navigation-bar {
+.main-content__tab-navigation-bar {
   text-align: center;
   display: flex;
   justify-content: space-around;
@@ -140,7 +140,7 @@ body {
   padding: 10px;
 }
 
-.tab-navigation-bar a {
+.main-content__tab-navigation-bar a {
   text-decoration: none;
   color: #3d3d3d;
   width: 100%;
@@ -149,19 +149,19 @@ body {
   margin: 0 5px;
 }
 
-.tab-navigation-bar a:hover {
+.main-content__tab-navigation-bar a:hover {
   background-color: rgb(131, 126, 126);
 }
 
-.tab-navigation-bar a:first-child {
+.main-content__tab-navigation-bar a:first-child {
   background-color: #d7d7d7;
 }
 
-.tab-navigation-bar a:first-child:hover {
+.main-content__tab-navigation-bar a:first-child:hover {
   background-color: rgb(131, 126, 126);
 }
 
-.projects-container {
+.main-content__projects-container {
   margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -169,12 +169,12 @@ body {
   gap: 20px 20px;
 }
 
-.project img {
+.main-content__project img {
   width: 100%;
   transition: 0.2s ease-in;
 }
 
-.project img:hover {
+.main-content__project img:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
@@ -196,15 +196,15 @@ body.dark-mode {
   background-color: #0c151d;
 }
 
-body.dark-mode .tab-navigation-bar {
+body.dark-mode .main-content__tab-navigation-bar {
   background-color: #171f26;
 }
 
-body.dark-mode .projects-container {
+body.dark-mode .main-content__projects-container {
   background-color: #0c151d;
 }
 
-body.dark-mode .tab-navigation-bar a:first-child {
+body.dark-mode .main-content__tab-navigation-bar a:first-child {
   background-color: #0c151d;
 }
 
@@ -212,22 +212,22 @@ body.dark-mode .footer {
   color: #99a1a8;
 }
 
-body.dark-mode .tab-navigation-bar a {
+body.dark-mode .main-content__tab-navigation-bar a {
   color: #99a1a8;
 }
-body.dark-mode .profile-contact-button {
+body.dark-mode .header__profile-contact-button {
   background-color: #171f26;
   color: #99a1a8;
 }
 
-body.dark-mode .profile-fact p {
+body.dark-mode .header__profile-fact p {
   color: #99a1a8;
 }
 
-body.dark-mode .profile-info h2 {
+body.dark-mode .header__profile-info h2 {
   color: #fff;
 }
 
-body.dark-mode .profile-info p {
+body.dark-mode .header__profile-info p {
   color: #99a1a8;
 }

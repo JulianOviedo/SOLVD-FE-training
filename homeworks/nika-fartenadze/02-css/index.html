@@ -19,76 +19,100 @@
           width="50"
           src="./images/toggle-theme-button.png"
           alt=""
-          class="theme-toggle-button"
+          class="theme-toggle-container__button"
         />
       </div>
       <header class="header">
-        <div class="header-profile">
+        <div class="header__profile">
           <img
             src="./images/profile-picture.png"
             alt="Profile Picture"
-            class="profile-picture"
+            class="header__profile-picture"
           />
-          <div class="profile-info">
-            <h2>Nika Fartenadze</h2>
-            <p>Test Automation Engineer</p>
-            <div class="profile-social-media-icons">
-              <img src="./images/github.png" width="20" alt="github" />
-              <img src="./images/twitter.png" width="20" alt="github" />
-              <img src="./images/linkedin.png" width="20" alt="github" />
-              <img src="./images/youtube.png" width="20" alt="github" />
+          <div class="header__profile-info">
+            <h2 class="header__profile-name">Nika Fartenadze</h2>
+            <p class="header__profile-title">Test Automation Engineer</p>
+            <div class="header__profile-social-media-icons">
+              <img
+                src="./images/github.png"
+                width="20"
+                alt="github"
+                class="header__profile-social-icon"
+              />
+              <img
+                src="./images/twitter.png"
+                width="20"
+                alt="twitter"
+                class="header__profile-social-icon"
+              />
+              <img
+                src="./images/linkedin.png"
+                width="20"
+                alt="linkedin"
+                class="header__profile-social-icon"
+              />
+              <img
+                src="./images/youtube.png"
+                width="20"
+                alt="youtube"
+                class="header__profile-social-icon"
+              />
             </div>
           </div>
         </div>
-        <div class="profile-facts-container">
-          <div class="profile-fact">
-            <p>7</p>
-            <p>Years of work experience</p>
+        <div class="header__profile-facts-container">
+          <div class="header__profile-fact">
+            <p class="header__profile-fact-number">7</p>
+            <p class="header__profile-fact-description">
+              Years of work experience
+            </p>
           </div>
-          <div class="profile-fact">
-            <p>50+</p>
-            <p>Completed projects</p>
+          <div class="header__profile-fact">
+            <p class="header__profile-fact-number">50+</p>
+            <p class="header__profile-fact-description">Completed projects</p>
           </div>
-          <div class="profile-fact">
-            <p>20+</p>
-            <p>Satisfied customers</p>
+          <div class="header__profile-fact">
+            <p class="header__profile-fact-number">20+</p>
+            <p class="header__profile-fact-description">Satisfied customers</p>
           </div>
         </div>
-        <div class="profile-buttons-container">
-          <button class="profile-cv-button button">
+        <div class="header__profile-buttons-container">
+          <button class="header__profile-cv-button button">
             Download CV <img src="./images/arrow.png" width="10" alt="arrow" />
           </button>
-          <button class="profile-contact-button button">Contact Me</button>
+          <button class="header__profile-contact-button button">
+            Contact Me
+          </button>
         </div>
       </header>
       <main class="main-content">
-        <nav class="tab-navigation-bar">
-          <a href="#">Portfolio</a>
-          <a href="#">Skills</a>
+        <nav class="main-content__tab-navigation-bar">
+          <a href="#" class="main-content__tab">Portfolio</a>
+          <a href="#" class="main-content__tab">Skills</a>
         </nav>
-        <div class="projects-container">
-          <div class="project">
+        <div class="main-content__projects-container">
+          <div class="main-content__project">
             <img src="./images/projects/1.png" alt="project 1" />
           </div>
-          <div class="project">
+          <div class="main-content__project">
             <img src="./images/projects/2.png" alt="project 2" />
           </div>
-          <div class="project">
+          <div class="main-content__project">
             <img src="./images/projects/3.png" alt="project 3" />
           </div>
-          <div class="project">
+          <div class="main-content__project">
             <img src="./images/projects/4.png" alt="project 4" />
           </div>
-          <div class="project">
+          <div class="main-content__project">
             <img src="./images/projects/5.png" alt="project 5" />
           </div>
-          <div class="project">
+          <div class="main-content__project">
             <img src="./images/projects/6.png" alt="project 6" />
           </div>
         </div>
       </main>
       <footer class="footer">
-        © Nika Fartenadze. 2024 All rigths reserved
+        © Nika Fartenadze. 2024 All rights reserved
       </footer>
     </div>
     <script src="index.js"></script>
