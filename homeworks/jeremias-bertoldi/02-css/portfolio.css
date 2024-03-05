@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: #dedede;
+  color: grey;
+}
+
+.header {
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 100%; 
+  background: #FFFFFF;
+  border: 1px solid #E7E7E7;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-left: 50%;
+}
+
+.header__icon {
+    margin-top: 20%;
+}
+
+.row {
+  display: -webkit-flex;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  
+}
+
+
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  height: 6%;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    background: url(vic-art-yellow.jpg);
+    background: #FFFFFF;
+    border: 4px solid #F7D039;
+    width: fit-content;
+}
+
+.profile-picture img{
+    border-radius: 50%;
+    width: 192px;
+    height: 192px;
+    top: 12px;
+    left: 14px;
+}
+
+.name {
+    margin: 3%;
+}
+
+.role {
+    margin: 3%;
+    font-size: small;
+}
+
+.social-media {
+   padding: 2%;
+}
+
+.social-media__icon {
+    margin: 3%;
+}
+
+.experience {
+    padding: 2%;
+    margin: 1%;
+    height: max-content;
+    text-align: center;
+}
+
+.btn {
+    border: none;
+    color: black;
+    padding: 1rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    font-size: 1.2rem;
+    padding-inline: 4rem;
+    border-radius: 12px;
+}
+
+.btn-experience {
+    border: none;
+    color: black;
+    padding: 1rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 12px;
+}
+
+.bckgrd-color-green {
+    background-color: green;
+}
+
+.bckgrd-color-dark {
+    background-color: #171F26;
+}
+
+.bckgrd-color-white {
+    background-color: white;
+}
+
+.bckgrd-color-yellow {
+    background-color: #F7D039;
+}
+
+.bckgrd-color-lightBlue {
+    background-color: #3E64AA;
+}
+
+.seperator-1 {
+    margin: 1rem;
+}
+
+.seperator-2 {
+    margin: 2rem;
+}
+
+.seperator-3 {
+    margin: 3rem;
+}
+
+.card-img {
+    width: 362px;
+    height:226px;
+    border-radius: 15px;
+}
+
+.grayscale { filter: grayscale(100%); }
+
+.text-center {
+    text-align: center;
+}
+
+.dark-mode-toggle {
+    position: relative;
+    width: 70px;
+    height: 54px;
+}
+
+.dark-mode-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: #ddd;
+    border-radius: 34px;
+    transition: background-color 0.3s;
+}
+
+.dark-mode-toggle-label::before {
+    content: '';
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 4px;
+    top: 4px;
+    transition: transform 0.3s;
+}
+
+#dark-mode-toggle-checkbox:checked + .dark-mode-toggle-label {
+    background-color: #333;
+}
+
+#dark-mode-toggle-checkbox:checked + .dark-mode-toggle-label::before {
+    transform: translateX(26px);
+}
+
+.dark-mode {
+    background-color: #0C151D;
+    color: #fff; 
+}
+
+.dark-mode-btn {
+    background-color: #171F26;
+    color: #fff; 
+}
+
+.dark-mode-btn-experience {
+    background-color: #0C151D;
+    color: #fff; 
+}
+
+.dark-mode-toggle-label {
+    background-color: #ddd;
+}
+
+.dark-mode-toggle-label::before {
+    background-color: #fff;
+}
