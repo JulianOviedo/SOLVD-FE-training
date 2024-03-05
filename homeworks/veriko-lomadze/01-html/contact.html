@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+    
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <hr>
+    
+    
+        
+        <section>
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="post">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <input type="text" id="lastName" name="lastName" required><br><br>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select Country</option>
+                    <option value="Canada">Georgia</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                </select><br><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" cols="29" rows="20" placeholder="type here..."></textarea><br><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+            
+        </section>
+ 
+    <hr>
+
+
+    <footer>
+        <a href="https://www.facebook.com/your-facebook-profile"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/your-instagram-profile"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/your-youtube-channel"><i class="fab fa-youtube"></i></a>
+        <a href="https://twitter.com/your-twitter-profile"><i class="fab fa-twitter"></i></a>
+</footer>
+</body>
+</html>
