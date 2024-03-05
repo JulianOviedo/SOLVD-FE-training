@@ -210,3 +210,7 @@ body {
 .dark-mode-toggle-label::before {
     background-color: #fff;
 }
+
+.ml-65 {
+    margin-left: 65px;
+}
