@@ -112,7 +112,7 @@ body {
 }
 .button {
   padding: 14px 60px;
-  transition: 0.1s ease-in;
+  transition: transform 0.1s ease-in;
   cursor: pointer;
 }
 
@@ -213,9 +213,20 @@ body.dark-mode .footer {
   color: #99a1a8;
 }
 
-body.dark-mode .main-content__tab-navigation-bar a {
+body.dark-mode .main-content__tab {
   color: #99a1a8;
 }
+
+/* i tried to just give them both same bg-color with .main-content__tab:hover, but then it doesnt work, i had to specify which one i gave bg-color to */
+
+body.dark-mode .main-content__tab:hover:first-child {
+  background-color: rgb(43, 42, 42);
+}
+
+body.dark-mode .main-content__tab:hover:last-child {
+  background-color: rgb(43, 42, 42);
+}
+
 body.dark-mode .header__profile-contact-button {
   background-color: #171f26;
   color: #99a1a8;
