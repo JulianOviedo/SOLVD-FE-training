@@ -100,7 +100,7 @@ h1 {
 }
 
 .second-grid-container .second-grid-item:nth-child(2) {
-    background-color: #1d1d1e;
+    background-color: #33383b;
 }
 
 
@@ -120,13 +120,17 @@ h1 {
     border-radius: 50px;
     overflow: hidden;
     max-width: 1900px;
+    border: 5px solid #33383b;
+    background-color: #33383b;
 }
 
 .button-container button {
-    background-color: #1d1d1e;
+    margin: 0px 5px 0px 5px;
+    background-color: #33383b;
     color: #fff;
     flex: 1;
-    padding: 15px 150px;
+    width: 30%;
+    padding: 10px 150px;
     font-size: 18px;
     border: none;
     outline: none;
@@ -135,7 +139,8 @@ h1 {
 }
 
 .button-container button:hover {
-    background-color: #2780bf;
+
+    background-color: #1d1d1e;
 }
 
 .button-container button:first-child {
