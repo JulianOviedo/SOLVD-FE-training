@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e9ebec;
+  font-family: poppins;
+  color: #3d3d3d;
+}
+
+.container {
+  margin: 0 auto;
+  width: 40%;
+  height: 100vh;
+}
+
+/* theme toggle styles */
+
+.theme-toggle-container {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.theme-toggle-container__button {
+  color: #3d3d3d;
+  transition: 0.2s ease-out;
+}
+
+.theme-toggle-container__button:hover {
+  transform: scale(1.2);
+}
+
+.header {
+  height: 300px;
+  padding: 15px;
+}
+
+/* profile styles */
+
+.header__profile {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header__profile-picture {
+  cursor: pointer;
+  border: 4px solid rgb(247, 247, 241);
+  outline: 2px solid #f7d039;
+  border-radius: 50%;
+  width: 100px;
+}
+
+.header__profile-info {
+  line-height: 15px;
+}
+
+.header__profile-info p {
+  color: #575757;
+}
+
+/* social media icon styles */
+.header__profile-social-media-icons {
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__profile-social-media-icon {
+  cursor: pointer;
+}
+
+/* profile facts styles */
+.header__profile-facts-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__profile-fact {
+  max-width: 100px;
+  text-align: center;
+  color: #575757;
+}
+
+.header__profile-fact p:first-child {
+  color: #3a3a3a;
+  line-height: 2px;
+}
+
+.header__profile-fact p:last-child {
+  font-size: 14px;
+}
+
+/* profile button styles */
+
+.header__profile-buttons-container {
+  margin: 25px auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 470px;
+}
+
+.header__profile-cv-button {
+  border: none;
+  background-color: #fbd144;
+  border-radius: 6px;
+}
+
+.header__profile-contact-button {
+  border: none;
+  background-color: #fff;
+  border-radius: 6px;
+}
+.button {
+  padding: 14px 60px;
+  transition: transform 0.1s ease-in;
+  cursor: pointer;
+}
+
+.header__profile-cv-button:hover {
+  transform: scale(0.9);
+  background-color: rgb(236, 184, 11);
+}
+
+.header__profile-contact-button:hover {
+  transform: scale(0.9);
+  background-color: #cecccc;
+}
+
+/* main content styles */
+
+.main-content {
+  margin-top: 40px;
+}
+
+.main-content__tab-navigation-bar {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 18px;
+  padding: 10px;
+}
+
+.main-content__tab-navigation-bar a {
+  text-decoration: none;
+  color: #3d3d3d;
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 0 5px;
+}
+
+.main-content__tab-navigation-bar a:hover {
+  background-color: rgb(131, 126, 126);
+}
+
+.main-content__tab-navigation-bar a:first-child {
+  background-color: #d7d7d7;
+}
+
+.main-content__tab-navigation-bar a:first-child:hover {
+  background-color: rgb(131, 126, 126);
+}
+
+.main-content__projects-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 20px;
+}
+
+.main-content__project img {
+  width: 100%;
+  transition: 0.2s ease-in;
+}
+
+.main-content__project img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.footer {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* styles for dark mode */
+
+body.light-mode {
+  background-color: #e9ebec;
+  color: #3d3d3d;
+}
+
+body.dark-mode {
+  background-color: #0c151d;
+}
+
+body.dark-mode .main-content__tab-navigation-bar {
+  background-color: #171f26;
+}
+
+body.dark-mode .main-content__projects-container {
+  background-color: #0c151d;
+}
+
+body.dark-mode .main-content__tab-navigation-bar a:first-child {
+  background-color: #0c151d;
+}
+
+body.dark-mode .footer {
+  color: #99a1a8;
+}
+
+body.dark-mode .main-content__tab {
+  color: #99a1a8;
+}
+
+/* i tried to just give them both same bg-color with .main-content__tab:hover, but then it doesnt work, i had to specify which one i gave bg-color to */
+
+body.dark-mode .main-content__tab:hover:first-child {
+  background-color: rgb(43, 42, 42);
+}
+
+body.dark-mode .main-content__tab:hover:last-child {
+  background-color: rgb(43, 42, 42);
+}
+
+body.dark-mode .header__profile-contact-button {
+  background-color: #171f26;
+  color: #99a1a8;
+}
+
+body.dark-mode .header__profile-fact p {
+  color: #99a1a8;
+}
+
+body.dark-mode .header__profile-info h2 {
+  color: #fff;
+}
+
+body.dark-mode .header__profile-info p {
+  color: #99a1a8;
+}
+
+body.dark-mode .header__profile-social-media-icon {
+  color: gray;
+}
+
+body.dark-mode .theme-toggle-container__button {
+  color: #fff;
+}
