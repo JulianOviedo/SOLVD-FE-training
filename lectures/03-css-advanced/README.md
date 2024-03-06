@@ -5,7 +5,7 @@ Here's you can find materials about СSS Advanced
 
 [Presentation](https://docs.google.com/presentation/d/1GQSNX64NsClM0MtzamZqwaEKhflZEpaPTMo3-U2KteU/edit?usp=sharing)
 
-[Video](https://drive.google.com/file/d/1J7Ext3Wu280B76176IldFIiMqMvtzMjO/view?usp=sharing)
+[Video](https://drive.google.com/file/d/12Y09wH3dFYdCK7OulOLdgB7njZFE1IIQ/view)
 
 
 Useful links
