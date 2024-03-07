@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+body {
+  background-color: #e9ebec;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 100%;
+  background: white;
+  border: 1px solid #e7e7e7;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-left: 50%;
+}
+
+.header__icon {
+  margin-top: 20%;
+}
+
+.row {
+  display: -webkit-flex;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+}
+
+.personal-information__profile-border {
+  border-radius: 50%;
+  background: white;
+  border: 8px solid white;
+  box-shadow: 0 0 0 4px yellow;
+  width: fit-content;
+}
+
+.personal-information__profile-picture {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  top: 12px;
+  left: 14px;
+}
+
+.personal-information__name {
+  margin: 2%;
+  font-size: xx-large;
+}
+
+.personal-information__role {
+  margin: 2%;
+  font-size: small;
+}
+
+.social-media {
+  padding: 2%;
+}
+
+.social-media__icon {
+  margin: 1%;
+}
+
+.experience {
+  padding: 2%;
+  margin: 2%;
+  height: max-content;
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  color: black;
+  background-color: white;
+  padding: 1rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  font-size: 1.2rem;
+  padding-inline: 4rem;
+  border-radius: 12px;
+}
+
+.experience-info__btn-container .btn-experience:hover {
+  background-color: #80808080;
+}
+
+.contact-info__btn-contact:hover {
+  background-color: yellow;
+}
+
+.contact-info {
+  margin: 3rem;
+}
+
+.experience-info__btn-container {
+  border-radius: 1vh;
+  background-color: white;
+  min-width: auto;
+}
+
+.projects-section {
+  margin: 3rem;
+}
+
+.card-img {
+  width: 40vh;
+  height: 25vh;
+  border-radius: 2vh;
+}
+
+.card-img:hover {
+  opacity: 0.5;
+}
+
+.card-img__grayscale {
+  filter: grayscale(100%);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-img{
+  vertical-align: middle;
+}
