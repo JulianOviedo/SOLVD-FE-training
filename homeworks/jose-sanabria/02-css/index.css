@@ -43,7 +43,7 @@ a {
   padding: 10px;
 }
 
-.profile-picture {
+.personal-information__profile-border {
   border-radius: 50%;
   background: white;
   border: 8px solid white;
@@ -51,7 +51,7 @@ a {
   width: fit-content;
 }
 
-.profile-picture img {
+.personal-information__profile-picture {
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -59,12 +59,12 @@ a {
   left: 14px;
 }
 
-.name {
+.personal-information__name {
   margin: 2%;
   font-size: xx-large;
 }
 
-.role {
+.personal-information__role {
   margin: 2%;
   font-size: small;
 }
@@ -97,21 +97,22 @@ a {
   border-radius: 12px;
 }
 
-.btn-experience:hover {
+.experience-info__btn-container .btn-experience:hover {
   background-color: #80808080;
 }
 
-.btn-contact:hover {
+.contact-info__btn-contact:hover {
   background-color: yellow;
 }
 
-.contact-section {
+.contact-info {
   margin: 3rem;
 }
 
-.experience-section {
+.experience-info__btn-container {
   border-radius: 1vh;
   background-color: white;
+  min-width: auto;
 }
 
 .projects-section {
