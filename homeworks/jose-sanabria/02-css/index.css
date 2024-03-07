@@ -105,16 +105,13 @@ a {
   background-color: yellow;
 }
 
-.background-white {
-  background-color: white;
-}
-
 .contact-section {
   margin: 3rem;
 }
 
 .experience-section {
   border-radius: 1vh;
+  background-color: white;
 }
 
 .projects-section {
@@ -131,7 +128,7 @@ a {
   opacity: 0.5;
 }
 
-.grayscale {
+.card-img__grayscale {
   filter: grayscale(100%);
 }
 
