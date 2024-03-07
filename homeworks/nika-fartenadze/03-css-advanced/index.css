@@ -8,7 +8,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 40%;
+  width: 45%;
   height: 100vh;
 }
 
@@ -95,7 +95,7 @@ body {
 .header__profile-buttons-container {
   margin: 25px auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 470px;
 }
 
@@ -130,6 +130,7 @@ body {
 
 .main-content {
   margin-top: 40px;
+  display: block;
 }
 
 .main-content__tab-navigation-bar {
@@ -146,7 +147,7 @@ body {
   color: #3d3d3d;
   width: 100%;
   padding: 16px;
-  border-radius: 8px;
+  border-radius: 6px;
   margin: 0 5px;
 }
 
@@ -250,4 +251,107 @@ body.dark-mode .header__profile-social-media-icon {
 
 body.dark-mode .theme-toggle-container__button {
   color: #fff;
+}
+
+/* scroll to top button styles */
+.scroll-to-top-link {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #171f26;
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.scroll-to-top-link:hover {
+  background-color: #f7d039;
+}
+
+/* mobile styles */
+@media screen and (max-width: 600px) {
+  .scroll-to-top-link {
+    display: block;
+  }
+  .container {
+    width: 100%;
+  }
+
+  .header__profile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__profile-social-media-icons {
+    margin: 0 auto;
+  }
+  .header__profile-social-media-icon {
+    font-size: 20px;
+  }
+  .main-content__tab-navigation-bar {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-content__tab-navigation-bar a {
+    padding: 12px 20px;
+  }
+  .main-content {
+    margin-top: 150px;
+  }
+  .button {
+    padding: 10px 16px;
+  }
+
+  .main-content__projects-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+/* tablet styles */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    width: 70%;
+  }
+  .header__profile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__profile-social-media-icons {
+    margin: 0 auto;
+  }
+  .header__profile-social-media-icon {
+    font-size: 20px;
+  }
+  .main-content__tab-navigation-bar a {
+    padding: 12px 20px;
+  }
+  .main-content {
+    margin-top: 150px;
+  }
+  .button {
+    padding: 14px 20px;
+  }
+
+  .main-content__projects-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
