@@ -1,0 +1,114 @@
+body { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #DDD;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: #DDD;
+    padding: 10px; 
+}
+
+.sun {
+    height : 2vh;
+    padding : 1vw;
+    border-radius: 20vh;
+    background-color: white;
+}
+
+#profile-info {
+    display : flex;
+    align-items: center;
+}
+
+#profile-info img {
+    height : 15vh;
+    border-radius: 100%;
+    margin: 1vw;
+}
+
+#name-and-title {
+    border: 10vw;
+}
+
+#experience {
+    text-align:center;
+    margin-inline: 1%;
+}
+
+.box {
+    display:inline-block;
+    max-width: 15%;
+    padding-block: 2vw;
+    padding-inline: 3%;
+    font-weight:400;
+}
+
+
+#contact-and-cv {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+#cv-button {
+    background-color: #FC5;
+}
+
+#cv-button:hover {
+    background-color: #FB3;
+}
+
+#contact-button:hover {
+    background-color: lightgray;
+}
+
+#cv-button, #contact-button {
+    padding-block: 1vw;
+    padding-inline: 3vw;
+    border-radius: 5px;
+    border-width: 0;
+    margin-inline: 1vw;
+}
+
+#portfolio-and-skills {
+    background-color: white;
+    padding: 0.5vw;
+    margin-top: 6vh;
+    width: 24vw;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#portfolio, #skills {
+    background-color: white;
+    width: 48%;
+    height: 6vh;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#projects-images {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Distribute items evenly */
+    max-width: 40%;
+    margin-top: 5vh;
+}
+
+.project-image {
+    height: 20vh;
+    width: 45%; 
+    margin-bottom: 20px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+.greyscale {
+    filter: grayscale(100%);
+}
