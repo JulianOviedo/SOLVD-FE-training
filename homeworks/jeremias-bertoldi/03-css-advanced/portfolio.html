@@ -17,15 +17,17 @@
     <div class="row my-5">
       <div class="column">
         <div class="dark-mode-toggle">
-          <input type="checkbox" id="dark-mode-toggle-checkbox" hidden />
+          <input type="checkbox" id="dark-mode-toggle-checkbox" />
           <label
             for="dark-mode-toggle-checkbox"
             class="dark-mode-toggle__label"
+            hidden
           ></label>
           <img
             src="./public/lightColorTheme.svg"
             alt=""
             class="dark-mode-toggle__icon"
+            id="toggleImg"
           />
         </div>
       </div>
@@ -101,7 +103,7 @@
         </button>
       </div>
     </div>
-    <div id="container-btns" class="bckgrd-color-white mx-5 my-2">
+    <div id="container-btns" class="bckgrd-color-white mx-5 my-1">
       <div class="row">
         <div class="column mx-1">
           <button type="button" class="btn-experience bckgrd-color-gray">

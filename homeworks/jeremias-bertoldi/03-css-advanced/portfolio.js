@@ -1,12 +1,15 @@
-document.getElementById('dark-mode-toggle-checkbox').addEventListener('change', function() {
-    document.body.classList.toggle('dark-mode')
-    document.getElementById('contactMe').classList.toggle('dark-mode-btn')
-    document.getElementById('portfolio').classList.toggle('dark-mode-btn-experience')
-    if (document.getElementById('container-btns').classList.contains('bckgrd-color-white')) {
-        document.getElementById('container-btns').classList.replace('bckgrd-color-white', 'bckgrd-color-dark')
-    }
-    if (document.getElementById('container-btns').classList.contains('bckgrd-color-dark')) {
-        document.getElementById('container-btns').classList.replace('bckgrd-color-dark', 'bckgrd-color-white')
-    }
-    document.getElementById('container-btns').classList.replace('bckgrd-color-white', 'bckgrd-color-dark')
-})
+document
+  .getElementById("dark-mode-toggle-checkbox")
+  .addEventListener("change", function () {
+    document.body.classList.toggle("dark-mode");
+    document.getElementById("contactMe").classList.toggle("dark-mode-btn");
+    document.getElementById("container-btns").classList.toggle("dark-mode-btn");
+    document
+      .querySelector(".dark-mode-toggle__label")
+      .classList.toggle("dark-mode");
+    document.getElementById("toggleImg").classList.toggle("text-white");
+    document.getElementById("toggleImg").classList.toggle("filter-white");
+    document.querySelectorAll(".social-media img").forEach((el) => {
+      el.classList.toggle("filter-white");
+    });
+  });

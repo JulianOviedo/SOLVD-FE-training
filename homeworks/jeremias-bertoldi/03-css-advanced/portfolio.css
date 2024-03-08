@@ -48,7 +48,7 @@ a {
   width: fit-content;
 }
 
-.profile-picture img {
+.profile-picture__image {
   border-radius: 50%;
   width: 192px;
   height: 192px;
@@ -63,6 +63,15 @@ a {
 
 .social-media {
   padding: 2%;
+  perspective: 1000px;
+}
+
+.social-media__icon-image {
+  transition: transform 0.5s ease;
+}
+
+.social-media__icon-image:hover {
+  transform: rotateY(360deg);
 }
 
 .experience {
@@ -127,6 +136,10 @@ a {
   background-color: #d7d7d7;
 }
 
+.text-white {
+  color: #ddd;
+}
+
 .card-img {
   width: 362px;
   height: 226px;
@@ -135,6 +148,10 @@ a {
 
 .grayscale {
   filter: grayscale(100%);
+}
+
+.filter-white {
+  filter: brightness(1) invert(1);
 }
 
 .text-center {
@@ -147,7 +164,7 @@ a {
 
 .dark-mode-toggle img {
   position: absolute;
-  top: 6px;
+  top: -20px;
   left: 50%;
   transform: translateX(-50%);
   width: 70px;
@@ -157,26 +174,19 @@ a {
 
 .dark-mode-toggle__label {
   position: absolute;
+  background-color: #ddd;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   cursor: pointer;
-  background-color: #ddd;
-  border-radius: 34px;
-  transition: background-color 0.3s;
 }
 
-.dark-mode-toggle__label::before {
-  content: "";
-  position: absolute;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background-color: #fff;
-  left: -44px;
-  top: 0px;
-  transition: transform 0.3s;
+#dark-mode-toggle-checkbox {
+  background-color: #d7d7d7;
+  cursor: pointer;
+  opacity: 0;
+  width: 50px;
 }
 
 #dark-mode-toggle-checkbox:checked + .dark-mode-toggle__label {
