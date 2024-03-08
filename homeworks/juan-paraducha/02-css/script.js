@@ -4,13 +4,13 @@ function toggleButton(clickedButtonId) {
 
     buttons.forEach(function(button) {
         if (body.classList.contains("dark-mode")) {
-            button.style.backgroundColor = '#333'; // Dark mode background color
+            button.style.backgroundColor = '#333';
         } else {
-            button.style.backgroundColor = 'white'; // Light mode background color
+            button.style.backgroundColor = 'white';
         }
 
         if (button.id === clickedButtonId) {
-            button.style.backgroundColor = 'lightgrey'; // Highlight the clicked button
+            button.style.backgroundColor = 'lightgrey'; 
         }
     });
 }
