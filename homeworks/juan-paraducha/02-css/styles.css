@@ -112,3 +112,45 @@ nav {
 .greyscale {
     filter: grayscale(100%);
 }
+
+.dark-mode {
+    background-color: black;
+    color: #DDD;
+}
+
+.dark-mode nav {
+    background-color: black;
+}
+
+.dark-mode .sun {
+    background-color: #444;
+}
+
+.dark-mode #profile-info {
+    background-color: #222;
+}
+
+.dark-mode #portfolio-and-skills {
+    background-color: #333;
+}
+
+.dark-mode #portfolio,
+.dark-mode #skills {
+    background-color: #333;
+}
+
+.dark-mode #profile-info {
+    background-color: black;
+}
+
+.linkedin-icon path,
+.twitter-icon path,
+.github-icon path {
+    fill: currentColor; 
+}
+
+body.dark-mode .linkedin-icon path,
+body.dark-mode .twitter-icon path,
+body.dark-mode .github-icon path {
+    fill: #fff; 
+}
