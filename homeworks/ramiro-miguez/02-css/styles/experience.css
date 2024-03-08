@@ -1,0 +1,27 @@
+.section_experience {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: var(--primary-font);
+  color: var(--text-color-primary);
+}
+.section_experience__content {
+  width: 300px;
+  display: flex;
+}
+.section_experience__item {
+  text-align: center;
+  width: 200px;
+}
+
+.section_experience__item h4 {
+  margin: 0;
+  font-weight: 300;
+}
+
+.section_experience__item p {
+  margin: 0;
+  font-size: small;
+  font-weight: 300;
+}
