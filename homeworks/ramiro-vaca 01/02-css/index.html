@@ -7,9 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Portfolio</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
+
+    <button id="mode-toggle">
+        <img id="light-mode-img" src="./image/daynight2.png">
+        <img id="dark-mode-img" src="./image/daynight3.png">
+    </button>
+
     <div class="container">
         <div class="profile">
             <img src="./image/profilep.jpeg" alt="Your Photo" class="profile-photo">
@@ -90,6 +97,9 @@
 
     <footer>
         <p>© Ramiro Vaca. 2024 All rights reserved.</p>
+        <button onclick="scrollToTop()" id="scrollToTopBtn">
+            <img id="scroll" src="./image/upnegro.png">
+        </button>
     </footer>
 
 
