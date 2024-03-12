@@ -47,7 +47,6 @@ nav {
     font-weight:400;
 }
 
-
 #contact-and-cv {
     display: inline-block;
     justify-content: center;
@@ -153,4 +152,37 @@ body.dark-mode .linkedin-icon path,
 body.dark-mode .twitter-icon path,
 body.dark-mode .github-icon path {
     fill: #fff; 
+}
+@media only screen and (max-width: 600px) {
+    body {
+        padding-bottom: 50px;
+    }
+
+    #scrollToTopBtn {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #FC5;
+        color: #FFF;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: block;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    #projects-images {
+        max-width: 100%; 
+        margin: 0 auto; 
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vh;
+    }
+
+    .project-image {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
 }
