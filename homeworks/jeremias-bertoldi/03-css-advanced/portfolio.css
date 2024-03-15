@@ -82,7 +82,7 @@ a {
   border: 0.1px solid rgba(110, 110, 110, 0.04);
 }
 
-.btn {
+.button {
   border: none;
   color: black;
   padding: 1rem 3rem;
@@ -94,7 +94,7 @@ a {
   border-radius: 12px;
 }
 
-.btn-experience {
+.button-experience {
   border: none;
   color: black;
   padding: 1rem 3rem;
@@ -106,33 +106,27 @@ a {
   height: 72px;
 }
 
-#container-btns {
-  border-radius: 20px;
-  position: relative;
-  border-radius: 10px;
-}
-
-.bckgrd-color-green {
+.background-color-green {
   background-color: green;
 }
 
-.bckgrd-color-dark {
+.background-color-dark {
   background-color: #171f26;
 }
 
-.bckgrd-color-white {
+.background-color-white {
   background-color: white;
 }
 
-.bckgrd-color-yellow {
+.background-color-yellow {
   background-color: #f7d039;
 }
 
-.bckgrd-color-lightBlue {
+.background-color-lightBlue {
   background-color: #3e64aa;
 }
 
-.bckgrd-color-gray {
+.background-color-gray {
   background-color: #d7d7d7;
 }
 
@@ -198,12 +192,12 @@ a {
   color: #fff;
 }
 
-.dark-mode-btn {
+.dark-mode-button {
   background-color: #171f26;
   color: #fff;
 }
 
-.dark-mode-btn-experience {
+.dark-mode-button-experience {
   background-color: #0c151d;
   color: #fff;
 }

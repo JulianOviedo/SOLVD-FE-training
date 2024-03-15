@@ -2,8 +2,10 @@ document
   .getElementById("dark-mode-toggle-checkbox")
   .addEventListener("change", function () {
     document.body.classList.toggle("dark-mode");
-    document.getElementById("contactMe").classList.toggle("dark-mode-btn");
-    document.getElementById("container-btns").classList.toggle("dark-mode-btn");
+    document.getElementById("contactMe").classList.toggle("dark-mode-button");
+    document
+      .getElementById("container-buttons")
+      .classList.toggle("dark-mode-button");
     document
       .querySelector(".dark-mode-toggle__label")
       .classList.toggle("dark-mode");
