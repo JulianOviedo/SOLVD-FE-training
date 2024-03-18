@@ -38,7 +38,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10px;
   height: 6%;
 }
 
@@ -102,8 +101,11 @@ a {
   text-decoration: none;
   font-size: 1.2rem;
   border-radius: 10px;
-  width: 311.45px;
-  height: 72px;
+}
+
+.no-wrap{
+  display: flex;
+  flex-flow: nowrap;
 }
 
 .background-color-green {
@@ -264,8 +266,27 @@ a {
   margin-bottom: 5rem;
 }
 
+.mx-50 {
+  margin: 0% 33% 0% 33%;
+}
+
+.border-radius-12 {
+  border-radius: 12px;
+}
+
 .space-between {
   display: flex;
   justify-content: space-around;
-  margin-left: 0;
+}
+
+.p-10{
+  padding: 10px;
+}
+
+.p-5{
+  padding: 5px;
+}
+
+.fit-content{
+  width: fit-content;
 }
