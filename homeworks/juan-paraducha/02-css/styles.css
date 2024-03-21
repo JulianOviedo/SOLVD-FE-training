@@ -4,7 +4,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #DDD;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins';
 }
 
 nav {
@@ -20,15 +20,17 @@ nav {
 }
 
 #profile-info {
-    display : flex;
+    display: flex;
     align-items: center;
-}
+  }
 
-#profile-info img {
-    height : 15vh;
-    border-radius: 100%;
-    margin: 1vw;
-}
+  #profile-info img {
+    height: 15vh;
+    border-radius: 50%; 
+    overflow: hidden;
+    border: 4px solid #F7D039; 
+    margin-right: 20px; 
+  }
 
 #name-and-title {
     border: 10vw;
@@ -84,12 +86,19 @@ nav {
 }
 
 #portfolio, #skills {
-    background-color: white;
     width: 48%;
     height: 6vh;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+
+#skills {
+    background-color: white;
+}
+
+#portfolio {
+    background-color: lightgrey;
 }
 
 #projects-images {
