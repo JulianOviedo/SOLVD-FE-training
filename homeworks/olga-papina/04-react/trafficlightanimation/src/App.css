@@ -1,0 +1,36 @@
+.wrapper {
+  margin: 10% 40% 10% 40%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.head {
+  width: 120px;
+  height: 32px;
+  margin-left: 24%;
+  border-radius: 40px 40px 0px 0px;
+  background: #414447;
+}
+
+.trafficLightSection {
+  width: 240px;
+  border-radius: 60px;
+  background: #585F68;
+  box-shadow: 24px 0px 0px 0px #0000001a inset;
+  display: flex;
+  flex-direction: column;
+  padding-top: 76px;
+  padding-bottom: 76px;
+  gap: 20px;
+
+}
+
+.trafficLight {
+  width: 120px;
+  height: 120px;
+  margin-left: 60px;
+  background: #5B5B5B;
+  box-shadow: 10px 0px 0px 0px #0000001A inset;
+  border-radius: 50%;
+}
