@@ -1,8 +1,10 @@
 import './index.css'
+import TrafficLight from "./TrafficLight";
 
 function App() {
   return (
-    <div>
+    <div className="container">
+      <TrafficLight />
     </div>
   );
 }
