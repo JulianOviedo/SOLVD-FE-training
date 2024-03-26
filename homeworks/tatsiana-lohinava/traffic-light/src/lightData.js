@@ -1,0 +1,1 @@
+export const lightData = ['#DF4040', '#E9EC6A', '#04CA00']
