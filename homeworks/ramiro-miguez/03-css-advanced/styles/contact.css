@@ -1,0 +1,31 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 100px;
+}
+
+.contact__button {
+  margin-top: 30px;
+  width: 200px;
+
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  color: var(--text-color-primary);
+  background-color: var(--color-primary);
+}
+
+.contact__button:hover {
+  transition: background-color 0.5s ease;
+  background-color: var(--color-third);
+  color: var(--text-color-secondary);
+  transform: scale(1.05);
+}
+
+@media (max-width: 520px) {
+  .contact__button {
+    width: 40%;
+  }
+}

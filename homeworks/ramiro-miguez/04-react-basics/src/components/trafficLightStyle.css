@@ -1,0 +1,40 @@
+.traffic-light-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  height: 200px;
+}
+
+.traffic-light-components-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.traffic-light-helmet {
+  background-color: #515050;
+  width: 50px;
+  height: 20px;
+  border-radius: 60px 60px 0 0; /* Rounded top, flat bottom */
+  margin-bottom: -5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.traffic-light {
+  background-color: #363232;
+  height: 100%;
+  width: 100px;
+  background-color: #5a5a6b;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.light {
+  width: 50px;
+  height: 50px;
+  margin: 5px auto;
+  border-radius: 25px;
+}

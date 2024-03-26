@@ -1,0 +1,59 @@
+:root {
+  --color-background: #000000;
+  --color-primary: #fca311;
+  --color-secondary: #14213d;
+  --color-third: #e5e5e5;
+  --text-color-primary: #ffffff;
+  --text-color-secondary: black;
+  --primary-font: "Poppins", sans-serif;
+}
+
+body.light-mode {
+  --color-background: #f8ffe5;
+  --color-primary: #06d6a0;
+  --color-secondary: #1b9aaa;
+  --color-third: #ef476f;
+  --text-color-primary: #000000;
+  --text-color-secondary: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: var(--primary-font);
+  background-color: var(--color-background);
+  color: var(--text-color-primary);
+}
+
+a {
+  color: var(--text-color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
